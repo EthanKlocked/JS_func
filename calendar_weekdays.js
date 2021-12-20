@@ -3,9 +3,9 @@ function form_weekdays(date = new Date()){
 	var raw_mm = date.getMonth() + 1;
 	var raw_dd = date.getDate();  
 	var mm = raw_mm > 9 ? raw_mm : '0'+ raw_mm;
-  var dd = raw_dd > 9 ? raw_dd : '0'+ raw_dd;
+  	var dd = raw_dd > 9 ? raw_dd : '0'+ raw_dd;
   
-  var format = `${yyyy}-${mm}-${dd}`;
+  	var format = `${yyyy}-${mm}-${dd}`;
   
 	var end_real = new Date(yyyy, mm, 0);
 	var real_enddate = end_real.getDate();
@@ -18,5 +18,5 @@ function form_weekdays(date = new Date()){
 	}
 	var weekdays = real_enddate - raw_cnt;
   
-  return [format, weekdays]; //yyyy-mm-dd foramt & weekdays
+  	return [format, weekdays]; //yyyy-mm-dd foramt & weekdays
 }
